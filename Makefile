@@ -1,4 +1,4 @@
 t := patch # Default tag type
 
-check:
-	@echo $(t)
+deploy-tag:
+	@bash tag-release.sh -t $(t) -m -p
